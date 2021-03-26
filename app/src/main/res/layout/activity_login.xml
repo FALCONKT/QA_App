@@ -52,6 +52,7 @@
             android:background="@drawable/custom_button"
             android:textColor="@color/colorButtonText" />
 
+
 <!--Account作成-->
         <Button
             android:layout_width="match_parent"

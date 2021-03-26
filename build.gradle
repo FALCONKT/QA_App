@@ -14,7 +14,7 @@ buildscript {
         // in the individual module build.gradle files
 
         //FireB関連    Mail認証とRealTimeDB設定
-        classpath 'com.google.gms:google-services:4.3.5'    // 追加
+        classpath 'com.google.gms:google-services:4.3.4'    // 追加
 
     }
 }

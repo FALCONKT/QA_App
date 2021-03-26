@@ -1,7 +1,6 @@
 package jp.techacademy.kenji.takada.qa_app
 
 
-
 // FirebaseにUserの表示名を保存するPass
 const val UsersPATH = "users"
 
