@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".SettingActivity">
+
+<!--    表示名-->
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/change_name_hint"/>
+
+<!--    表示名変更Button-->
+    <Button
+        android:id="@+id/changeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/menu_change_button_label"
+        android:textColor="@color/colorButtonText"/>
+
+<!--    LogOutButton-->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/menu_logout_label"
+        android:textColor="@color/colorButtonText"/>
+
+</LinearLayout>

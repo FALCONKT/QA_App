@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".LoginActivity">
+
+<!--    LinearLayout　を入れ子にしている-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        MailAdress-->
+<!--        何を入力したら良いかわかるように、EditTextにはandroid:hint属性を指定-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailText"
+            android:hint="@string/login_email_hint" />
+
+<!--        Password-->
+<!--        何を入力したら良いかわかるように、EditTextにはandroid:hint属性を指定-->
+<!--        android:inputType="textPassword"  Password用の入力様式-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/login_pass_hint"
+            android:id="@+id/passwordText" />
+
+<!--        表示名-->
+<!--        何を入力したら良いかわかるように、EditTextにはandroid:hint属性を指定-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_name_hint"
+            android:id="@+id/nameText" />
+
+<!--     　　LogIn-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/login_title"
+            android:id="@+id/loginButton"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/colorButtonText" />
+
+<!--Account作成-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/login_createbutton_text"
+            android:id="@+id/createButton"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/colorButtonText" />
+
+    </LinearLayout>
+
+<!--    android:layout_centerInParent="true"　で画面中央-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
